@@ -21,7 +21,9 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["src/components/*"],
+      "@/utils/*": ["src/utils/*"],
       "@/sections/*": ["src/sections/*"],
+      "@/lib/*": ["src/lib/*"],
       "@/public/*": ["public/*"]
     }
   },
