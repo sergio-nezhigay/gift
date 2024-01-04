@@ -10,10 +10,6 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-.container {
-  outline: 1px dotted blue;
-}
-
 @layer utilities {
   .section {
     @apply py-[0px] md:py-[0px] lg:py-[0px];
