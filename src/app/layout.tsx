@@ -1,13 +1,26 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat, Caveat } from "next/font/google";
+
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  weight: ["400", "500", "700"],
+  subsets: ["cyrillic"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const caveat = Caveat({
+  weight: ["400", "700"],
+  subsets: ["cyrillic"],
+  variable: "--font-caveat",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Gift",
-  description: "Gifts for you",
+  title: "Подарунок",
+  description: "Подарунки для вас",
 };
 
 export default function RootLayout({
@@ -16,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="uk" className={`${montserrat.variable} ${caveat.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

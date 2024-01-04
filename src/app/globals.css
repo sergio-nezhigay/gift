@@ -8,6 +8,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: var(--font-montserrat);
+}
+
+h1 {
+  font-family: var(--font-caveat);
 }
 
 @layer utilities {

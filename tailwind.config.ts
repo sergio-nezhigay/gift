@@ -22,10 +22,13 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["var(--font-caveat)"],
+        sans: ["var(--font-montserrat)"],
+      },
       colors: {
         white: "#ffffff",
       },
-
       screens: {
         sm: "480px",
         md: "768px",
