@@ -4,24 +4,32 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.container {
+  outline: 1px dotted blue;
+}
+
+@layer utilities {
+  .section {
+    @apply py-[0px] md:py-[0px] lg:py-[0px];
+  }
+
+  .body-small {
+    @apply text-[12px] font-extralight leading-5 lg:leading-6;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
 }
