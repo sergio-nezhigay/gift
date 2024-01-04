@@ -11,7 +11,7 @@ function Example() {
     <div className="max-w-md bg-blue-100">
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionTrigger>Is it accessible??</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.
           </AccordionContent>
